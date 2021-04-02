@@ -43,7 +43,7 @@
 
 .footer{
   &__content{
-    background: #DFDFDF;
+    background-color: #DFDFDF;
     padding: 60px 0 80px;
     
   }
@@ -188,4 +188,120 @@
     text-align: center;
     padding: 42px  41px;
   }
+}
+
+.rightside-menu{
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 694px;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 40px;
+  box-shadow: -2px 3px 17px 0px #000;
+  transition: all .5s;
+  &.rightside-menu--close{
+    transform: translateX(500%);
+    
+  }
+  &__close{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+    margin-left: 47px;
+    margin-right: 50px;
+    margin-bottom: 60px;
+  }
+  &__content{
+    text-align: center;
+    max-width: 485px;
+    margin: 0 auto;
+  }
+  &__logo{
+    margin-bottom: 40px;
+    display: inline-block;
+  }
+  &__title{
+    color: $title;
+    @extend %title-font;
+    font-size: 35px;
+    line-height: 51px;
+    position: relative;
+    margin-bottom: 17px;
+    padding-bottom: 17px;
+    &::after{
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 252px;
+      margin: 0 auto;
+      height: 1px;
+      background: #6D7278;
+      ;
+    }
+  }
+  &__text{
+    margin-bottom: 75px;
+  }
+  &__images{
+    max-width: 485px;
+  }
+
+}
+
+.top{
+  &__inner{
+    padding-bottom: 70px;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: '';
+      background-image: url('../images/main_slider.jpg');
+      width: 100%;
+      height: 722px;
+      top: 0;
+      z-index: -1;
+    }
+  }
+  &__slider-item{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  &__slider-img{
+    margin-left: -14%;
+    max-width: 703px;
+    height: 815px;
+    object-fit: cover;
+  }
+  &__slider-info{
+    max-width: 645px;
+    margin-left: 25px;
+  }
+  &__slider-title{
+    color: $title;
+    font-size: 110px;
+    line-height: 134px;
+    padding-bottom: 26px;
+    margin-bottom: 26px;
+    position: relative;
+    &::after{
+      position: absolute;
+      content: '';
+      left: 0;
+      width: 185px;
+      background: #6D7278;
+      bottom: 0;
+      height: 1px;
+    }
+  }
+  &__slider-text{
+   max-width: 585px;
+  }
+
 }
