@@ -63,3 +63,23 @@ body{
   }
 
 
+  .info-email {
+    font-weight: 600;
+    font-size: 14px;
+    color: #363838;
+    margin-bottom: 22px;
+    padding-left: 30px;
+    display: inline-block;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-image: url('../images/email.svg');
+      background-repeat: no-repeat;
+      top: 9px;
+      left: 0;
+      width: 16px;
+      height: 12px;
+      position: absolute;
+    }
+  }
