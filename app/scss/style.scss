@@ -19,6 +19,9 @@
     outline: none;
     cursor: pointer;
   }
+  &__btn-menu{
+    display: none;
+  }
 
 }
 
@@ -26,13 +29,13 @@
   margin: 0 auto;
 }
 .menu{
-  padding-left: 35px;
-  padding-right: 60px;
+  padding-right: 15px;
   &__list{
     display: flex;
   }
   &__list-item + .menu__list-item{
-     padding-left: 80px;
+     padding-left: 35px;
+     padding-right: 45px;
   }
   &__list-link{
     @extend %title-font;
@@ -1316,3 +1319,6 @@ margin-bottom: 40px;
   }
 
 }
+
+
+@import 'media';
